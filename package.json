@@ -1,0 +1,9 @@
+{
+  "name": "marriage-invitation3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "M. Vignesh & R. Latha Wedding Invitation - Template 3 (Lotus & Palace)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

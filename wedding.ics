@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vignesh & Latha Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vignesh-latha-20261120@wedding
+DTSTAMP:20261114T120000Z
+DTSTART:20261120T073000
+DTEND:20261120T120000
+SUMMARY:M. Vignesh & R. Latha Wedding (Subha Muhurtham)
+LOCATION:Sengunthar thirumana mandapam A/C\, Opposite Town Panchayat Office\, Kalambur\, Tamil Nadu 606903
+DESCRIPTION:Subha Muhurtham: 7:30 AM - 9:00 AM. Location: https://maps.app.goo.gl/Ac6CfDiq5LCfae8t8 . Cordially inviting you to bless the couple M. Vignesh (M.Sc., B.Ed.) & R. Latha (B.A., B.Ed., D.Co-op.).
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Vignesh & Latha Wedding Muhurtham is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR
