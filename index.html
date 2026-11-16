@@ -244,7 +244,7 @@ html.is-opened .first__dim{opacity:1}
 .music{position:fixed;right:14px;top:calc(14px + env(safe-area-inset-top));z-index:30;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);background:rgba(255,250,245,.75);color:var(--gold);display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px)}
 .music svg{width:18px;height:18px}
 .music[aria-pressed="false"] .on,.music[aria-pressed="true"] .off{display:none}
-.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));transform:translateY(120%);transition:transform .35s}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:14px var(--pad) calc(14px + env(safe-area-inset-bottom));transform:translateY(120%);transition:transform .35s;background:linear-gradient(to top,rgba(241,214,216,.96) 0%,rgba(241,214,216,.75) 70%,transparent 100%);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .dock.is-on{transform:none}
 .dock .btn{display:flex;width:100%;max-width:var(--col);margin:0 auto;background:var(--ink);color:#fffaf5;border-color:var(--ink);box-shadow:inset 0 0 0 3px var(--ink),inset 0 0 0 4px var(--gold-lt),0 10px 30px -12px rgba(122,46,64,.6)}
 #fall{position:fixed;inset:0;pointer-events:none;z-index:20}
@@ -341,7 +341,7 @@ html.is-opened .first__dim{opacity:1}
       <h2 class="t gsap-reveal">Meet the Couple</h2>
       <p class="sub font-tamil gsap-reveal" style="font-size:22px;color:var(--gold);font-weight:600">மணமக்கள்</p>
 
-      {/* Couple Photo in Palace Border */}
+      <!-- Couple Photo in Palace Border -->
       <div class="couple-wrap gsap-reveal-scale">
         <div class="couple-img-box">
           <img src="media/couple-photo.jpg" alt="M. Vignesh and R. Latha" loading="lazy">
@@ -353,9 +353,9 @@ html.is-opened .first__dim{opacity:1}
           <p class="tag">"Two souls, one sacred bond, a lifetime of love and togetherness"</p>
         </div>
 
-        {/* Side-by-side profile cards under the photo */}
+        <!-- Side-by-side profile cards under the photo -->
         <div class="couple-cards-grid">
-          {/* Bride Card (Standing on left) */}
+          <!-- Bride Card (Standing on left) -->
           <div class="c-badge-box">
             <span class="role">மணமகள் • The Bride</span>
             <h4>R. Latha</h4>
@@ -363,7 +363,7 @@ html.is-opened .first__dim{opacity:1}
             <p class="qual-val">🎓 B.A., B.Ed., D.Co-op.</p>
           </div>
 
-          {/* Groom Card (Standing on right) */}
+          <!-- Groom Card (Standing on right) -->
           <div class="c-badge-box">
             <span class="role">மணமகன் • The Groom</span>
             <h4>M. Vignesh</h4>
@@ -494,7 +494,7 @@ html.is-opened .first__dim{opacity:1}
       <h2 class="t gsap-reveal">Our Families</h2>
       <p class="sub font-tamil gsap-reveal" style="font-size:20px;color:var(--gold);font-weight:600">எங்கள் குடும்பத்தினர்</p>
 
-      {/* Inviting Elders */}
+      <!-- Inviting Elders -->
       <div class="info-card gsap-reveal" style="text-align:center;max-width:440px;margin:16px auto 0">
         <h4>Cordially Awaiting Your Presence • தங்கள் வரவை அன்புடன் எதிர்நோக்கும்</h4>
         <p class="main-t" style="margin-top:8px">G. Mani <span style="font-size:15px;font-weight:normal;opacity:0.8">(Clerk Retd., PACS Kalambur)</span></p>
@@ -504,7 +504,7 @@ html.is-opened .first__dim{opacity:1}
         <p class="tamil-t font-tamil">M. குப்பு அம்மாள் <span style="font-size:14px;font-weight:normal">(களம்பூர்)</span></p>
       </div>
 
-      {/* Groom & Bride Families Grid */}
+      <!-- Groom & Bride Families Grid -->
       <div class="fam-box gsap-reveal">
         <div class="fam-panel">
           <h4>Groom's Family • மணமகன் வீட்டார்</h4>
@@ -561,7 +561,7 @@ html.is-opened .first__dim{opacity:1}
           <button class="btn" id="cal" type="button">Add to Calendar</button>
         </div>
 
-        {/* Structured Address Cards */}
+        <!-- Structured Address Cards -->
         <div class="info-grid">
           <div class="info-card">
             <h4>Venue Location (அமைவிடம்)</h4>
