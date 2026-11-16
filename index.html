@@ -130,28 +130,28 @@ html.is-opened .first__dim{opacity:1}
 .first__cta .btn{width:100%;min-height:48px;font-size:15px;background:var(--ink);color:#fffaf5;border-color:var(--ink);box-shadow:inset 0 0 0 3px var(--ink),inset 0 0 0 4px var(--gold-lt)}
 .first__by{font-size:14px;color:#fffaf5;text-shadow:0 1px 8px rgba(90,30,50,.8);margin:.6svh 0 0;font-style:italic}
 
-/* ---------- 2 · письмо в конверте ---------- */
-.envsec{--bg:#f1d6d8;padding:calc(min(130vw,860px)*.367 + 20px) 0 70px}
+/* ---------- 2 · Letter in Envelope ---------- */
+.envsec{--bg:#f1d6d8;padding:calc(min(130vw,860px)*.367 + 40px) 0 80px;position:relative}
 .trim{position:absolute;left:50%;top:0;transform:translateX(-50%);pointer-events:none;z-index:2!important}
 .envsec__stick{position:relative;display:flex;flex-direction:column;align-items:center}
-.envsec__hint{position:relative;margin:22px 0 0;text-align:center;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg2);transition:opacity .4s}
-.env{--p2:0;position:relative;width:min(92vw,380px);aspect-ratio:900/1028;cursor:pointer}
+.envsec__hint{position:relative;margin:24px 0 0;text-align:center;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg2);transition:opacity .4s}
+.env{--p2:0;position:relative;width:min(94vw,390px);aspect-ratio:900/1028;cursor:pointer}
 .env__back,.env__front{position:absolute;inset:0;background:url(media/env-blush.jpg) center/100% 100% no-repeat;pointer-events:none}
 .env__back{z-index:1;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent),linear-gradient(to right,transparent,#000 7%,#000 93%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent),linear-gradient(to right,transparent,#000 7%,#000 93%,transparent);mask-composite:intersect}
 .env__front{z-index:3;opacity:.9;clip-path:polygon(7.4% 38.9%,51.3% 64.2%,92.6% 39.2%,92.6% 95.3%,7.4% 95.3%)}
-.env__paper{position:absolute;left:15%;right:15%;top:40%;height:50%;border-radius:6px;background:none!important;color:var(--navy);display:block!important;padding:0!important;z-index:2;
-  transform:translate3d(0,calc(var(--p2) * -84%),0);will-change:transform;perspective:1100px}
+.env__paper{position:absolute;left:8%;right:8%;top:24%;height:76%;min-height:310px;border-radius:10px;background:none!important;color:var(--navy);display:block!important;padding:0!important;z-index:2;
+  transform:translate3d(0,calc(var(--p2) * -66% - 20px),0);will-change:transform;perspective:1100px;box-shadow:0 14px 30px -12px rgba(92,22,38,.45)}
 .flip{position:absolute;inset:0;transform-style:preserve-3d;transition:transform 1s cubic-bezier(.3,.7,.2,1)}
 .env__paper.is-flipped .flip{transform:rotateY(180deg)}
-.flip__f,.flip__b{position:absolute;inset:0;border-radius:6px;backface-visibility:hidden;box-shadow:0 10px 26px -18px rgba(0,0,0,.6);overflow:hidden}
-.flip__f{background:var(--paper) url(media/paper-letter-v3.jpg) center/cover;color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px}
-.flip__f .t{font-size:clamp(22px,6.6vw,28px);margin:0 0 2px}
-.flip__f p.t-tamil{margin:2px 0 4px;font-size:13px;line-height:1.4;color:var(--ink);font-weight:600}
-.flip__f .env__txt{font-size:clamp(11px,3vw,12.5px);line-height:1.35;margin:0;max-width:26ch}
-.flip__f .env__sig{font-family:var(--script);font-size:clamp(20px,5.6vw,24px);line-height:1;margin:6px 0 0;color:var(--ink)}
-.flip__b{transform:rotateY(180deg);background:var(--paper) url(media/paper-letter-v3.jpg) center/cover;padding:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--ink);box-shadow:inset 0 0 0 5px var(--paper),inset 0 0 0 6px var(--gold)}
-.flip__b p{margin:4px 0 0;font-size:clamp(12px,3vw,14px);font-style:italic}
-.flip__b span{font-family:var(--script);font-size:clamp(22px,6vw,28px);color:var(--gold)}
+.flip__f,.flip__b{position:absolute;inset:0;border-radius:10px;backface-visibility:hidden;box-shadow:0 10px 26px -18px rgba(0,0,0,.6);overflow:hidden}
+.flip__f{background:var(--paper) url(media/paper-letter-v3.jpg) center/cover;color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:22px 18px 20px;box-shadow:inset 0 0 0 1px rgba(169,128,63,.3),0 12px 28px -10px rgba(92,22,38,.4)}
+.flip__f .t{font-size:clamp(22px,6.5vw,28px);margin:0;line-height:1;color:var(--ink)}
+.flip__f p.t-tamil{margin:6px 0;font-size:13.5px;line-height:1.45;color:var(--ink);font-weight:600;max-width:32ch}
+.flip__f .env__txt{font-size:13px;line-height:1.45;margin:4px 0;max-width:30ch;color:rgba(92,22,38,.85)}
+.flip__f .env__sig{font-family:var(--script);font-size:clamp(24px,6.5vw,30px);line-height:1;margin:8px 0 0;color:var(--ink)}
+.flip__b{transform:rotateY(180deg);background:var(--paper) url(media/paper-letter-v3.jpg) center/cover;padding:22px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--ink);box-shadow:inset 0 0 0 4px var(--paper),inset 0 0 0 5.5px var(--gold),0 12px 28px -10px rgba(92,22,38,.4)}
+.flip__b p{margin:6px 0 0;font-size:14px;font-style:italic}
+.flip__b span{font-family:var(--script);font-size:clamp(26px,7vw,34px);color:var(--gold)}
 
 /* ---------- COUPLE PHOTO & QUALIFICATIONS (PALACE STYLE) ---------- */
 .couple-wrap{position:relative;margin:28px auto 0;max-width:380px;border-radius:26px;background:rgba(255,250,245,.9);border:1.5px solid var(--gold);padding:14px;box-shadow:0 20px 40px -15px rgba(122,46,64,.35)}
@@ -656,9 +656,19 @@ var EVENT={
   function gone(){
     cover.classList.add('is-gone');
     document.body.style.overflow='';
-    if(H.classList.contains('is-opened'))return;
-    H.classList.add('is-opened');
-    window.vbFall&&window.vbFall();
+    if(!H.classList.contains('is-opened')){
+      H.classList.add('is-opened');
+      window.vbFall&&window.vbFall();
+    }
+    if(window.lenis){
+      window.lenis.resize();
+      window.lenis.start();
+    }
+    if(window.ScrollTrigger) ScrollTrigger.refresh();
+    setTimeout(function(){
+      if(window.lenis) window.lenis.resize();
+      if(window.ScrollTrigger) ScrollTrigger.refresh();
+    }, 400);
   }
   document.body.style.overflow='hidden';
 
@@ -762,19 +772,56 @@ var EVENT={
   document.getElementById('scratchAlt').addEventListener('click',reveal);
   paint(); PIMG.onload=GRAIN.onload=function(){if(!shown)paint();};
 
-  /* 2 · конверт */
-  var env=document.getElementById('env'), hint=document.getElementById('envHint'), paper=document.getElementById('paper'), outNow=false;
+  /* 2 · Envelope & Letter Opening */
+  var env=document.getElementById('env'), hint=document.getElementById('envHint'), paper=document.getElementById('paper'), outNow=false, letterOpen=false;
   var clamp=function(v){return Math.max(0,Math.min(1,v));};
+  function setEnvP2(val){
+    env.style.setProperty('--p2', val.toFixed(4));
+    outNow = val > 0.85;
+    if(val < 0.1){
+      hint.textContent='Scroll or tap to open the letter';
+      hint.style.opacity=1;
+    } else if(outNow && !paper.classList.contains('is-flipped')){
+      hint.textContent='Tap the letter to turn it over';
+      hint.style.opacity=1;
+    } else if(paper.classList.contains('is-flipped')){
+      hint.textContent='Tap to turn back';
+      hint.style.opacity=1;
+    } else {
+      hint.style.opacity=0.7;
+    }
+  }
+
   function envTick(){
-    var r=env.getBoundingClientRect(), e=clamp((innerHeight*.92-r.top)/(innerHeight*.6)); e=e<.5?2*e*e:1-Math.pow(-2*e+2,2)/2;
-    env.style.setProperty('--p2',e.toFixed(4)); outNow=e>.92;
-    if(e<.05){hint.textContent='Scroll to open the letter from us'; hint.style.opacity=1;}
-    else if(outNow&&!paper.classList.contains('is-flipped')){hint.textContent='Tap the letter to turn it over'; hint.style.opacity=1;}
-    else hint.style.opacity=0; }
-  addEventListener('scroll',function(){requestAnimationFrame(envTick);},{passive:true}); envTick();
-  env.addEventListener('click',function(){
-    if(outNow){paper.classList.toggle('is-flipped'); hint.style.opacity=0; try{navigator.vibrate&&navigator.vibrate(15);}catch(e){} return;}
-    var r=env.getBoundingClientRect(); scrollTo({top:scrollY+r.top-innerHeight*.28,behavior:'smooth'});});
+    if(letterOpen) return;
+    var r=env.getBoundingClientRect();
+    var e=clamp((innerHeight*0.85 - r.top)/(innerHeight*0.55));
+    e = e < 0.5 ? 2*e*e : 1 - Math.pow(-2*e+2, 2)/2;
+    setEnvP2(e);
+  }
+  addEventListener('scroll', function(){ requestAnimationFrame(envTick); }, {passive:true});
+  envTick();
+
+  // Tap anywhere on envelope or letter to fully open or flip
+  env.addEventListener('click', function(e){
+    if(!outNow){
+      letterOpen = true;
+      if(window.gsap){
+        var dummy = { p: parseFloat(env.style.getPropertyValue('--p2')) || 0 };
+        gsap.to(dummy, {
+          p: 1, duration: 0.9, ease: 'power2.out',
+          onUpdate: function(){ setEnvP2(dummy.p); },
+          onComplete: function(){ setEnvP2(1); }
+        });
+      } else {
+        setEnvP2(1);
+      }
+      try{navigator.vibrate&&navigator.vibrate(20);}catch(err){}
+    } else {
+      paper.classList.toggle('is-flipped');
+      try{navigator.vibrate&&navigator.vibrate(15);}catch(err){}
+    }
+  });
 
   /* программа дня */
   var plan=document.querySelector('.plan');
@@ -816,15 +863,17 @@ var EVENT={
   }
   addEventListener('scroll',function(){requestAnimationFrame(dockSync);},{passive:true});
 
-  /* ===== LENIS SMOOTH SCROLL & GSAP SCROLLTRIGGER ===== */
+  /* ===== LENIS SMOOTH SCROLL & GSAP SCROLLTRIGGER REVEALS ===== */
   if(window.Lenis && window.gsap && window.ScrollTrigger){
     var lenis = new Lenis({
       duration: 1.2,
       easing: function(t){ return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
       smoothWheel: true,
       wheelMultiplier: 1,
-      touchMultiplier: 1.6
+      touchMultiplier: 1.5,
+      infinite: false
     });
+    window.lenis = lenis;
 
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add(function(time){ lenis.raf(time * 1000); });
@@ -832,16 +881,18 @@ var EVENT={
 
     gsap.registerPlugin(ScrollTrigger);
 
+    // Smooth reveal for headings and cards
     gsap.utils.toArray('.gsap-reveal').forEach(function(el){
-      gsap.fromTo(el, { opacity: 0, y: 30 }, {
-        opacity: 1, y: 0, duration: 1, ease: 'power2.out',
+      gsap.fromTo(el, { opacity: 0, y: 36 }, {
+        opacity: 1, y: 0, duration: 1.1, ease: 'power2.out',
         scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
       });
     });
 
+    // Smooth scale & lift for frames, photos, and scratch card
     gsap.utils.toArray('.gsap-reveal-scale').forEach(function(el){
-      gsap.fromTo(el, { opacity: 0, scale: 0.94, y: 25 }, {
-        opacity: 1, scale: 1, y: 0, duration: 1.1, ease: 'power2.out',
+      gsap.fromTo(el, { opacity: 0, scale: 0.94, y: 28 }, {
+        opacity: 1, scale: 1, y: 0, duration: 1.2, ease: 'power2.out',
         scrollTrigger: { trigger: el, start: 'top 86%', toggleActions: 'play none none none' }
       });
     });
